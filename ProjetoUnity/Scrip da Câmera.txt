@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraMovement : MonoBehaviour
+{
+    public Rigidbody2D pl;
+
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        this.transform.position = new Vector3(pl.position.x, 0, -10);
+    }
+}
